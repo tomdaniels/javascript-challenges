@@ -6,7 +6,6 @@ function mergeAndSortArrays(array1, array2) {
   return joinedArray.sort(function(number1, number2){
     return (number1 - number2);
   });
-
 }
 
 var array1 = [1, 10, 100];
