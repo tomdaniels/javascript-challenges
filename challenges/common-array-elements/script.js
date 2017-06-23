@@ -1,8 +1,8 @@
 function commonArrayElements(array1, array2){
-  var newArray = [];
+  var results = [];
   for (var i = 0; i < array1.length; ++i){
       if (array1[i] === array2){
-      }
+      } results.push(resultArray);
     }
   }
 
