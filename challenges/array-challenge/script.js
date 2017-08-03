@@ -11,4 +11,5 @@ function mergeAndSortArrays(array1, array2) {
 var array1 = [1, 10, 100];
 var array2 = [2, 20, 200];
 var resultArray = mergeAndSortArrays(array1, array2);
+console.log('Challenge 1: Merge & Sort');
 console.log(resultArray);
