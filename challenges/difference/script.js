@@ -1,13 +1,16 @@
 function differentArrayElements(array1, array2){
-  newArray = [];
-  for (var i = 0; i < array1.length; i++){
-    array2.filter(function(arrayCheck){
-      if (arrayCheck === array1[i]){
-        newArray.pop(arrayCheck);
+  var results = [];
+  for (var i = 0; i < array1.length; i++) {
+    var arrayLength = array1.length;
+    for (var j = 0; j < arrayLength; j++) {
+      if (array2[i] == array1[j]) {
+        results = array1.slice(0, j).concat(array1.slice(j + 1, arrayLength));
       }
-    });
-    return newArray;
+    }
   }
+  return results.sort(function(number1, number2){
+    return (number1 - number2);
+  });
 }
 
 var array1 = [1, 20, 10, 100, 2];
