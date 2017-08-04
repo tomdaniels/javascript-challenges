@@ -1,8 +1,5 @@
 function reverseArray(myArray){
-  var newArray = [];
-   for (var i = myArray.length -1; i >= 0; i--) {
-     newArray.push(myArray[i]);
-   }
+  var newArray = myArray.reverse();
    return newArray;
 }
 
