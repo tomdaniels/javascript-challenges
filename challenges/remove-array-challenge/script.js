@@ -1,6 +1,8 @@
 // Uses filter function instead of manual loop.
 function removeNumberFromArray(myArray, number){
-  return myArray.filter(function(num) {return num != number});
+  return myArray.filter(function(num) {
+    return num != number
+  });
 }
 
 var myArray = [1, 2, 3, 4, 5];
