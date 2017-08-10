@@ -1,8 +1,8 @@
 function titleCase(title) {
 	var title = title.toLowerCase().split(' ');
-		for (var i = 0; i < title.length; i++) {
-			title[i] = title[i].charAt(0).toUpperCase() + title[i].slice(1);
-	}
+		title = title.forEach(function(index){
+			title.forEach(index).charAt(0).toUpperCase() + title(index).slice(1);
+		});
 	return title.join(' ');
 }
 
