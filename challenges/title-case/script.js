@@ -1,6 +1,6 @@
 function titleCaseMap(title) {
 	const myNewTitle = title.toLowerCase().split(' ');
-	const results = myNewTitle.forEach(function(index) {
+	const results = myNewTitle.map(function(index) {
 		return results.charAt(0).toUpperCase() + results.slice(1);
 	});
 	return results.join(' ');
