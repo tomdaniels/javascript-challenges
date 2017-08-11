@@ -1,9 +1,9 @@
-function titleCase(title) {
-	var title = title.toLowerCase().split(' ');
-		for (var i = 0; i < title.length; i++) {
-			title[i] = title[i].charAt(0).toUpperCase() + title[i].slice(1);
-	}
-	return title.join(' ');
+function titleCaseMap(title) {
+	const myNewTitle = title.toLowerCase().split(' ');
+	const results = myNewTitle.map(function(index) {
+		return results.charAt(0).toUpperCase() + results.slice(1);
+	});
+	return results.join(' ');
 }
 
 var title = "my very loNg anD bEaUtIfUl tItlE!";
